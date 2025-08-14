@@ -1,0 +1,82 @@
+[
+  {
+    "_id": "1",
+    "name": "Hyderabadi Biryani",
+    "price": 280,
+    "images": [
+      "assets/menu-images/biryani-1.jpg",
+      "assets/menu-images/biryani-2.jpg"
+    ],
+    "description": "Fragrant basmati rice layered with tender halal chicken, slow-cooked with saffron and a blend of aromatic spices. Served with cooling raita."
+  },
+  {
+    "_id": "2",
+    "name": "Mutton Rogan Josh",
+    "price": 350,
+    "images": [
+      "assets/menu-images/Mutton-Rogan-Josh-1.jpg",
+      "assets/menu-images/Mutton-Rogan-Josh-2.jpg"
+    ],
+    "description": "A royal Kashmiri delicacy of succulent mutton simmered in a rich, spiced gravy with yogurt and Kashmiri red chilies."
+  },
+  {
+    "_id": "3",
+    "name": "Chicken Korma",
+    "price": 260,
+    "images": [
+      "assets/menu-images/chicken-korma-1.jpg",
+      "assets/menu-images/chicken-korma-2.jpg"
+    ],
+    "description": "Boneless chicken cooked in a creamy, mildly spiced sauce of yogurt, nuts, and saffron — a true Mughlai classic."
+  },
+  {
+    "_id": "4",
+    "name": "Chicken Seekh Kebabs",
+    "price": 200,
+    "images": [
+      "assets/menu-images/Chicken-Seekh-Kebabs-1.jpg",
+      "assets/menu-images/Chicken-Seekh-Kebabs-2.jpg"
+    ],
+    "description": "Juicy minced chicken skewers seasoned with herbs and spices, grilled to perfection, and served with mint chutney."
+  },
+  {
+    "_id": "5",
+    "name": "Keema Samosas",
+    "price": 120,
+    "images": [
+      "assets/menu-images/Keema-Samosas-1.jpg",
+      "assets/menu-images/Keema-Samosas-2.jpg"
+    ],
+    "description": "Crispy golden pastries stuffed with spiced minced mutton, served hot with tangy tamarind dip."
+  },
+  {
+    "_id": "6",
+    "name": "Shahi Tukda",
+    "price": 140,
+    "images": [
+      "assets/menu-images/Shahi-Tukda-1.jpg",
+      "assets/menu-images/Shahi-Tukda-2.jpg"
+    ],
+    "description": "Fried bread soaked in saffron-infused milk, topped with nuts and silver leaf — a dessert fit for royalty."
+  },
+  {
+    "_id": "7",
+    "name": "Gulab Jamun",
+    "price": 100,
+    "images": [
+      "assets/menu-images/Gulab-Jamun-1.jpg",
+      "assets/menu-images/Gulab-Jamun-2.jpg"
+    ],
+    "description": "Soft, golden dumplings soaked in warm sugar syrup, melting in your mouth with every bite"
+  },
+  {
+    "_id": "8",
+    "name": "Falooda",
+    "price": 150,
+    "images": [
+      "assets/menu-images/Falooda-1.jpg",
+      "assets/menu-images/Falooda-2.jpg"
+    ],
+    "description": "A sweet and refreshing mix of rose syrup, vermicelli, milk, basil seeds, and ice cream — a festive treat in a glass"
+  }
+]
