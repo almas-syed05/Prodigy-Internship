@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificates - My Portfolio</title>
+  <link rel="stylesheet" href="style.css"> <!-- Use same CSS as main page -->
+</head>
+<body>
+
+  <!-- small green bar -->
+  <div id="top-bar"></div>
+
+  <!-- sticky nav -->
+  <nav id="sticky-nav">
+    <div class="nav-logo">AS</div>
+    
+    <!-- Hamburger button -->
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    
+    <div class="nav-links">
+      <a href="index.html#top" class="nav-link">Home</a>
+      <a href="index.html#projects" class="nav-link">Projects</a>
+      <a href="index.html#skills" class="nav-link">Skills</a>
+      <a href="certificate.html" class="nav-link">Certificates</a>
+      <a href="resume.pdf" class="nav-link" target="_blank">Resume</a>
+      <a href="index.html#contact-me" class="contact-box">Contact Me</a>
+    </div>
+  </nav>
+  
+
+  <!-- hero nav -->
+  <section class="hero" id="top">
+    <nav id="hero-nav">
+      <div class="nav-logo">AS</div>
+    
+      <!-- Hamburger button -->
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    
+      <div class="nav-links">
+        <a href="index.html#top" class="nav-link">Home</a>
+        <a href="index.html#projects" class="nav-link">Projects</a>
+        <a href="index.html#skills" class="nav-link">Skills</a>
+        <a href="certificate.html" class="nav-link">Certificates</a>
+        <a href="resume.pdf" class="nav-link" target="_blank">Resume</a>
+        <a href="index.html#contact-me" class="contact-box">Contact Me</a>
+      </div>
+    </nav>
+    
+
+  <!-- Certificates Section -->
+  <section id="certificates">
+    <h2>My Certificates</h2>
+    <div class="certificates-grid">
+      <div class="certificate-box" data-img="cert1.jpg">
+        <img src="cert1.jpg" alt="Google Analytics Certificate" />
+        <div class="certificate-description">
+          <span class="cert-title">Google Analytics</span>
+          <span class="cert-issuer">Google</span>
+        </div>
+      </div>
+      
+      
+      <div class="certificate-box" data-img="cert2.jpg">
+        <img src="cert2.jpg" alt="Data Analytics 101" />
+        <div class="certificate-description">
+          <span class="cert-title">Data Analytics 101</span>
+          <span class="cert-issuer">Microsoft</span>
+        </div>
+      </div>
+      <div class="certificate-box" data-img="cert3.jpg">
+        <img src="cert3.jpg" alt="Cyber Job Simulation" />
+        <div class="certificate-description">
+          <span class="cert-title">Cyber Job Simulation</span>
+          <span class="cert-issuer">Deloitte</span>
+        </div>
+      </div>
+      
+      
+      <div class="certificate-box" data-img="cert4.jpg">
+        <img src="cert4.jpg" alt="Solutions Architecture Job Simulation" />
+        <div class="certificate-description">
+          <span class="cert-title">Solutions Architecture </span>
+          <span class="cert-issuer">AWS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-image" src="" alt="Certificate Preview">
+  </div>
+  
+  
+
+  <script>
+    const stickyNav = document.getElementById('sticky-nav');
+    const topBar = document.getElementById('top-bar');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        stickyNav.classList.add('visible');
+        topBar.style.opacity = '0';
+        topBar.style.pointerEvents = 'none';
+      } else {
+        stickyNav.classList.remove('visible');
+        topBar.style.opacity = '1';
+        topBar.style.pointerEvents = 'auto';
+      }
+    });
+  </script>
+  <script>
+    const boxes = document.querySelectorAll('.certificate-box');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.querySelector('.lightbox-image');
+    const closeBtn = document.querySelector('.lightbox-close');
+  
+    boxes.forEach(box => {
+      box.addEventListener('click', () => {
+        const imgSrc = box.getAttribute('data-img');
+        lightboxImg.src = imgSrc;
+        lightbox.style.display = 'flex';
+      });
+    });
+  
+    closeBtn.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+    });
+  
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = 'none';
+      }
+    });
+  </script>
+  <script>
+    function toggleMenu() {
+      document.querySelectorAll('.nav-links').forEach(nav => {
+        nav.classList.toggle('show');
+      });
+    }
+  </script>
+  
+  
+
+</body>
+</html>
