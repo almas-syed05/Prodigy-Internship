@@ -27,7 +27,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ===== NAVBAR ===== */
+/*  NAVBAR  */
 nav.navbar {
   display: flex;
   justify-content: space-between;
@@ -91,7 +91,7 @@ nav.navbar {
   width: 100%;
 }
 
-/* ===== HERO / LANDING ===== */
+/*  HERO / LANDING  */
 .landing {
   width: 100%;
   height: 100vh;
@@ -234,7 +234,7 @@ nav.navbar {
   100% { background-color: rgba(255, 255, 255, 0.5); transform: scale(1); }
 }
 
-/* ===== MENU SECTION ===== */
+/*  MENU SECTION  */
 .menu-section {
   display: flex;
   justify-content: center;
@@ -367,8 +367,6 @@ nav.navbar {
 .menu-item-image:hover::after {
   background-color: rgba(0, 0, 0, 0.2);
 }
-
-/* ===== POPUP MODAL (CSS-only checkbox hack) ===== */
 .popup-toggle {
   display: none;
 }
@@ -502,8 +500,6 @@ nav.navbar {
   background-color: #a07a42;
   transform: translateY(-2px);
 }
-
-/* Make labels clickable like buttons */
 .menu-item-info label,
 .menu-item-image label {
   cursor: pointer;
@@ -522,7 +518,7 @@ nav.navbar {
   object-position: center;
 }
 
-/* ===== FOOTER ===== */
+/*  FOOTER */
 footer {
   display: flex;
   justify-content: space-around;
@@ -561,9 +557,6 @@ footer a:hover {
   opacity: 0.6;
 }
 
-/* ===== RESPONSIVE ===== */
-
-/* Tablets & small laptops */
 @media (min-width: 600px) {
   nav.navbar {
     padding: 0.2rem 2rem;
@@ -605,7 +598,6 @@ footer a:hover {
   }
 }
 
-/* Desktops */
 @media (min-width: 900px) {
   nav.navbar {
     padding: 0.2rem 6rem;
@@ -625,7 +617,6 @@ footer a:hover {
   }
 }
 
-/* Large desktops */
 @media (min-width: 1300px) {
   nav.navbar {
     padding: 0.5rem 12rem;
@@ -642,7 +633,6 @@ footer a:hover {
   }
 }
 
-/* Small screens */
 @media (max-width: 599px) {
   nav.navbar {
     padding: 0.5rem 1rem;
