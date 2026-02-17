@@ -1,81 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Halalicious - House of Food</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/common.css" />
-    <link rel="stylesheet" href="styles/media.css" />
-    <link rel="stylesheet" href="styles/loader.css" />
-    
-  </head>
-  <body>
-    <div class="loader-container">
-      <div class="loader"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Halalicious — Where Every Bite is a Blessing. Discover our halal and delicious menu featuring Hyderabadi Biryani, Mutton Rogan Josh, and more." />
+  <title>Halalicious - House of Food</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Grechen+Fuemen&family=Poppins:wght@300;400;500;600;700&family=Salsa&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="#main" class="logo">Halalicious</a>
+    <ul class="nav-links">
+      <li><a href="#main">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO / LANDING SECTION -->
+  <section class="landing" id="main">
+    <div class="landing-bg">
+      <img src="assets/backgrounds/bg-1.jpg" alt="Background 1" class="bg-img bg-img-1" />
+      <img src="assets/backgrounds/bg-2.jpg" alt="Background 2" class="bg-img bg-img-2" />
+      <img src="assets/backgrounds/bg-3.jpg" alt="Background 3" class="bg-img bg-img-3" />
+      <img src="assets/backgrounds/bg-4.jpg" alt="Background 4" class="bg-img bg-img-4" />
+      <img src="assets/backgrounds/bg-5.jpg" alt="Background 5" class="bg-img bg-img-5" />
     </div>
-    <nav class="navbar">
-      <a href="#main" id="caffeine-heading">Halalicious</a>
-      <ul>
-        <li>
-          <a href="#main">Home</a>
-        </li>
-        <li>
-          <a href="#menu">Menu</a>
-        </li>
-      </ul>
-    </nav>  
-    <main id="main">
-      <div class="landing">
-        <div id="landing-background">
-          <!-- javascript puts images here with class landing-background-image-->
-        </div>
-        <div id="background-indicators">
-          <!-- javascript puts dots here with class background-indicator-->
-        </div>
-        <h3>"Halalicious — Where Every Bite is a Blessing."</h3>
-        <h1>Halal & Tasty Meals</h1>
-        <p>We have the best meals in town. We serve it hot and fresh.</p>
-        <a href="#menu" class="button-primary"> Order Now </a>
-        <div class="carousel-buttons">
-          <button id="carousel-button-prev" onclick="prevSlide()">
-            &#10094;
-          </button>
-          <button id="carousel-button-next" onclick="nextSlide()">
-            &#10095;
-          </button>
+    <div class="landing-overlay"></div>
+    <div class="landing-content">
+      <h3>"Halalicious — Where Every Bite is a Blessing."</h3>
+      <h1>Halal &amp; Tasty Meals</h1>
+      <p>We have the best meals in town. We serve it hot and fresh.</p>
+      <a href="#menu" class="btn-primary">Order Now</a>
+    </div>
+    <div class="carousel-indicators">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  <!-- MENU SECTION -->
+  <section id="menu" class="menu-section">
+    <h3 class="menu-subtitle">Let's Eat Something <span class="highlight">Halal &amp; Delicious</span></h3>
+    <h1 class="menu-title">MENU</h1>
+
+    <div class="menu-grid">
+
+      <!-- Item 1: Hyderabadi Biryani -->
+      <div class="menu-item-info">
+        <label for="popup-1">
+          <h3>₹280</h3>
+          <h2>Hyderabadi Biryani</h2>
+          <span class="star">&#9733;</span>
+          <p>Fragrant basmati rice layered with tender halal chicken, slow-cooked with saffron and a blend of aromatic spices. Served with cooling raita.</p>
+        </label>
+      </div>
+      <div class="menu-item-image">
+        <label for="popup-1">
+          <img src="assets/menu-images/biryani-1.jpg" alt="Hyderabadi Biryani" />
+        </label>
+      </div>
+
+      <!-- Item 2: Mutton Rogan Josh -->
+      <div class="menu-item-image">
+        <label for="popup-2">
+          <img src="assets/menu-images/Mutton-Rogan-Josh-1.jpg" alt="Mutton Rogan Josh" />
+        </label>
+      </div>
+      <div class="menu-item-info">
+        <label for="popup-2">
+          <h3>₹350</h3>
+          <h2>Mutton Rogan Josh</h2>
+          <span class="star">&#9733;</span>
+          <p>A royal Kashmiri delicacy of succulent mutton simmered in a rich, spiced gravy with yogurt and Kashmiri red chilies.</p>
+        </label>
+      </div>
+
+      <!-- Item 3: Chicken Korma -->
+      <div class="menu-item-info">
+        <label for="popup-3">
+          <h3>₹260</h3>
+          <h2>Chicken Korma</h2>
+          <span class="star">&#9733;</span>
+          <p>Boneless chicken cooked in a creamy, mildly spiced sauce of yogurt, nuts, and saffron — a true Mughlai classic.</p>
+        </label>
+      </div>
+      <div class="menu-item-image">
+        <label for="popup-3">
+          <img src="assets/menu-images/chicken-korma-1.jpg" alt="Chicken Korma" />
+        </label>
+      </div>
+
+      <!-- Item 4: Chicken Seekh Kebabs -->
+      <div class="menu-item-image">
+        <label for="popup-4">
+          <img src="assets/menu-images/Chicken-Seekh-Kebabs-1.jpg" alt="Chicken Seekh Kebabs" />
+        </label>
+      </div>
+      <div class="menu-item-info">
+        <label for="popup-4">
+          <h3>₹200</h3>
+          <h2>Chicken Seekh Kebabs</h2>
+          <span class="star">&#9733;</span>
+          <p>Juicy minced chicken skewers seasoned with herbs and spices, grilled to perfection, and served with mint chutney.</p>
+        </label>
+      </div>
+
+      <!-- Item 5: Keema Samosas -->
+      <div class="menu-item-info">
+        <label for="popup-5">
+          <h3>₹120</h3>
+          <h2>Keema Samosas</h2>
+          <span class="star">&#9733;</span>
+          <p>Crispy golden pastries stuffed with spiced minced mutton, served hot with tangy tamarind dip.</p>
+        </label>
+      </div>
+      <div class="menu-item-image">
+        <label for="popup-5">
+          <img src="assets/menu-images/Keema-Samosas-1.jpg" alt="Keema Samosas" />
+        </label>
+      </div>
+
+      <!-- Item 6: Shahi Tukda -->
+      <div class="menu-item-image">
+        <label for="popup-6">
+          <img src="assets/menu-images/Shahi-Tukda-1.jpg" alt="Shahi Tukda" />
+        </label>
+      </div>
+      <div class="menu-item-info">
+        <label for="popup-6">
+          <h3>₹140</h3>
+          <h2>Shahi Tukda</h2>
+          <span class="star">&#9733;</span>
+          <p>Fried bread soaked in saffron-infused milk, topped with nuts and silver leaf — a dessert fit for royalty.</p>
+        </label>
+      </div>
+
+      <!-- Item 7: Gulab Jamun -->
+      <div class="menu-item-info">
+        <label for="popup-7">
+          <h3>₹100</h3>
+          <h2>Gulab Jamun</h2>
+          <span class="star">&#9733;</span>
+          <p>Soft, golden dumplings soaked in warm sugar syrup, melting in your mouth with every bite.</p>
+        </label>
+      </div>
+      <div class="menu-item-image">
+        <label for="popup-7">
+          <img src="assets/menu-images/Gulab-Jamun-1.jpg" alt="Gulab Jamun" />
+        </label>
+      </div>
+
+      <!-- Item 8: Falooda -->
+      <div class="menu-item-image">
+        <label for="popup-8">
+          <img src="assets/menu-images/Falooda-1.jpg" alt="Falooda" />
+        </label>
+      </div>
+      <div class="menu-item-info">
+        <label for="popup-8">
+          <h3>₹150</h3>
+          <h2>Falooda</h2>
+          <span class="star">&#9733;</span>
+          <p>A sweet and refreshing mix of rose syrup, vermicelli, milk, basil seeds, and ice cream — a festive treat in a glass.</p>
+        </label>
+      </div>
+
+    </div>
+
+    <!-- POPUP MODALS (CSS-only using checkbox hack) -->
+
+    <!-- Popup 1: Hyderabadi Biryani -->
+    <input type="checkbox" id="popup-1" class="popup-toggle" />
+    <div class="popup-overlay">
+      <div class="popup-card" style="background-image: url('assets/menu-images/biryani-2.jpg');">
+        <label for="popup-1" class="popup-close">&#10006;</label>
+        <div class="popup-bottom">
+          <div class="popup-headings">
+            <h3>₹ 280</h3>
+            <h2>Hyderabadi Biryani</h2>
+          </div>
+          <p>Fragrant basmati rice layered with tender halal chicken, slow-cooked with saffron and a blend of aromatic spices. Served with cooling raita.</p>
+          <label for="popup-1" class="popup-btn">Add to Cart</label>
         </div>
       </div>
-      <div id="menu">
-        <h3>Let's Eat Something <span class="highlight">Halal & Delicious</span></h3>
-        <h1>MENU</h1>
-        <div class="menu-items-container">
-          <!-- javascript puts menu items here with class menu-item-->
-        </div>
-        <div id="menu-item-details">
-          <div class="menu-item-detailed-overlay"></div>
-          <!-- 
-          javascript puts menu item details here with class menu-item-detailed
-         -->
+    </div>
+
+    <!-- Popup 2: Mutton Rogan Josh -->
+    <input type="checkbox" id="popup-2" class="popup-toggle" />
+    <div class="popup-overlay">
+      <div class="popup-card" style="background-image: url('assets/menu-images/Mutton-Rogan-Josh-2.jpg');">
+        <label for="popup-2" class="popup-close">&#10006;</label>
+        <div class="popup-bottom">
+          <div class="popup-headings">
+            <h3>₹ 350</h3>
+            <h2>Mutton Rogan Josh</h2>
+          </div>
+          <p>A royal Kashmiri delicacy of succulent mutton simmered in a rich, spiced gravy with yogurt and Kashmiri red chilies.</p>
+          <label for="popup-2" class="popup-btn">Add to Cart</label>
         </div>
       </div>
-    </main>
-    <footer>
-      <span>&copy; Created by <a href="https://github.com/almas-syed05" target="_blank">AlmasSyed</a> </span>
-      <div>
-        <a href="https://github.com/almas-syed05/Prodigy-Internship/tree/main/PRODIGY_WD_01" target="_blank">
-          <img
-            src="https://www.svgrepo.com/show/303615/github-icon-1-logo.svg"
-            alt=""
-          />
-        </a>
-        <a href="https://www.linkedin.com/in/almas-syed-4675512a8" target="_blank">
-          <img src="https://www.svgrepo.com/show/508852/linkedin.svg" alt="" />
-        </a>
+    </div>
+
+    <!-- Popup 3: Chicken Korma -->
+    <input type="checkbox" id="popup-3" class="popup-toggle" />
+    <div class="popup-overlay">
+      <div class="popup-card" style="background-image: url('assets/menu-images/chicken-korma-2.jpg');">
+        <label for="popup-3" class="popup-close">&#10006;</label>
+        <div class="popup-bottom">
+          <div class="popup-headings">
+            <h3>₹ 260</h3>
+            <h2>Chicken Korma</h2>
+          </div>
+          <p>Boneless chicken cooked in a creamy, mildly spiced sauce of yogurt, nuts, and saffron — a true Mughlai classic.</p>
+          <label for="popup-3" class="popup-btn">Add to Cart</label>
+        </div>
       </div>
-    </footer>
-    <div class="scrollbar"></div>
-  </body>
-  <script src="scripts/script.js"></script>
+    </div>
+
+    <!-- Popup 4: Chicken Seekh Kebabs -->
+    <input type="checkbox" id="popup-4" class="popup-toggle" />
+    <div class="popup-overlay">
+      <div class="popup-card" style="background-image: url('assets/menu-images/Chicken-Seekh-Kebabs-2.jpg');">
+        <label for="popup-4" class="popup-close">&#10006;</label>
+        <div class="popup-bottom">
+          <div class="popup-headings">
+            <h3>₹ 200</h3>
+            <h2>Chicken Seekh Kebabs</h2>
+          </div>
+          <p>Juicy minced chicken skewers seasoned with herbs and spices, grilled to perfection, and served with mint chutney.</p>
+          <label for="popup-4" class="popup-btn">Add to Cart</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 5: Keema Samosas -->
+    <input type="checkbox" id="popup-5" class="popup-toggle" />
+    <div class="popup-overlay">
+      <div class="popup-card" style="background-image: url('assets/menu-images/Keema-Samosas-2.jpg');">
+        <label for="popup-5" class="popup-close">&#10006;</label>
+        <div class="popup-bottom">
+          <div class="popup-headings">
+            <h3>₹ 120</h3>
+            <h2>Keema Samosas</h2>
+          </div>
+          <p>Crispy golden pastries stuffed with spiced minced mutton, served hot with tangy tamarind dip.</p>
+          <label for="popup-5" class="popup-btn">Add to Cart</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 6: Shahi Tukda -->
+    <input type="checkbox" id="popup-6" class="popup-toggle" />
+    <div class="popup-overlay">
+      <div class="popup-card" style="background-image: url('assets/menu-images/Shahi-Tukda-2.jpg');">
+        <label for="popup-6" class="popup-close">&#10006;</label>
+        <div class="popup-bottom">
+          <div class="popup-headings">
+            <h3>₹ 140</h3>
+            <h2>Shahi Tukda</h2>
+          </div>
+          <p>Fried bread soaked in saffron-infused milk, topped with nuts and silver leaf — a dessert fit for royalty.</p>
+          <label for="popup-6" class="popup-btn">Add to Cart</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 7: Gulab Jamun -->
+    <input type="checkbox" id="popup-7" class="popup-toggle" />
+    <div class="popup-overlay">
+      <div class="popup-card" style="background-image: url('assets/menu-images/Gulab-Jamun-2.jpg');">
+        <label for="popup-7" class="popup-close">&#10006;</label>
+        <div class="popup-bottom">
+          <div class="popup-headings">
+            <h3>₹ 100</h3>
+            <h2>Gulab Jamun</h2>
+          </div>
+          <p>Soft, golden dumplings soaked in warm sugar syrup, melting in your mouth with every bite.</p>
+          <label for="popup-7" class="popup-btn">Add to Cart</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup 8: Falooda -->
+    <input type="checkbox" id="popup-8" class="popup-toggle" />
+    <div class="popup-overlay">
+      <div class="popup-card" style="background-image: url('assets/menu-images/Falooda-2.jpg');">
+        <label for="popup-8" class="popup-close">&#10006;</label>
+        <div class="popup-bottom">
+          <div class="popup-headings">
+            <h3>₹ 150</h3>
+            <h2>Falooda</h2>
+          </div>
+          <p>A sweet and refreshing mix of rose syrup, vermicelli, milk, basil seeds, and ice cream — a festive treat in a glass.</p>
+          <label for="popup-8" class="popup-btn">Add to Cart</label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>&copy; Created by <a href="https://github.com/almas-syed05" target="_blank">AlmasSyed</a></span>
+    <div class="footer-links">
+      <a href="https://github.com/almas-syed05/Prodigy-Internship/tree/main/PRODIGY_WD_01" target="_blank">
+        <img src="https://www.svgrepo.com/show/303615/github-icon-1-logo.svg" alt="GitHub" />
+      </a>
+      <a href="https://www.linkedin.com/in/almas-syed-4675512a8" target="_blank">
+        <img src="https://www.svgrepo.com/show/508852/linkedin.svg" alt="LinkedIn" />
+      </a>
+    </div>
+  </footer>
+
+</body>
 </html>
